@@ -45,3 +45,9 @@ curl -u username:password -O ftp://...file.zip
 curl -u username:passwrod -T {fname} {ftp_location}
 ```
 
+## Tar
+
+```
+-- Compress tar.gz
+tar cfv - /path/tocompress | gzip -9 - > destination.tar.gz
+```
